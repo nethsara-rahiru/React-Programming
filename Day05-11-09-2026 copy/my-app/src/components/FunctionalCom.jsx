@@ -1,0 +1,12 @@
+import { useState } from "react"
+import "../App";
+
+export default function Greeting(props){
+    const [count, setCount] = useState(0);
+    return(
+        <>
+        <h1 className="bg">Hello {props.name}</h1>
+        <button onClick = {()=>setCount(count + 1)}>{count}</button>
+        </>
+    );
+}
